@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter | Bhupesh Indurkar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Temperature Converter</h1>
+        <p class="subtitle">
+            Convert temperature between Celsius, Fahrenheit and Kelvin
+        </p>
+
+        <input
+            type="number"
+            id="tempValue"
+            placeholder="Enter Temperature Value">
+
+        <select id="scale">
+            <option value="celsius">Celsius (°C)</option>
+            <option value="fahrenheit">Fahrenheit (°F)</option>
+            <option value="kelvin">Kelvin (K)</option>
+        </select>
+
+        <button onclick="convertTemp()">Convert</button>
+
+        <div class="result" id="result">
+            Converted Temperature will be displayed here
+        </div>
+    </div>
+
+    <footer>
+        Created by <strong>Bhupesh Indurkar</strong>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
